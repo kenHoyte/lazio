@@ -16,7 +16,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('frontend.welcome');
-});
+})->name('home');
+
+Route::get('/donations', function () {
+    return view('backend.donations');
+})->name('donations');
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
