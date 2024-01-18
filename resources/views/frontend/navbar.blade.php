@@ -44,8 +44,8 @@
                         <div class="main-menu">
                             <nav>
                                 <ul id="navigation">
-                                    
-                    
+
+
 
                                     <li>
                                         <a>@if (Route::has('login'))
@@ -54,7 +54,7 @@
                                                 <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
                                             @else
                                                 <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
-                        
+
                                                 @if (Route::has('register'))
                                                     <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
                                                 @endif
@@ -80,7 +80,7 @@
                             </nav>
                             <div class="Appointment">
                                 <div class="book_btn d-none d-lg-block">
-                                    <a data-scroll-nav='1' href="#">Make a Donate</a>
+                                    <a data-scroll-nav='1' href="#">Make a Donation</a>
                                 </div>
                             </div>
                         </div>
