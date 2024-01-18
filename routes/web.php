@@ -18,8 +18,8 @@ Route::get('/', function () {
     return view('frontend.welcome');
 })->name('home');
 
-Route::get('/donations', function () {
-    return view('backend.donations');
+Route::get('/mainboard', function () {
+    return view('backend.mainboard');
 })->name('donations');
 
 
