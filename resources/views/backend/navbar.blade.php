@@ -37,12 +37,12 @@
             <div class="dropdown dropdown-mega d-none d-lg-block ml-2">
                 <button type="button" class="btn header-item waves-effect" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
                     Mega Menu
-                    <i class="mdi mdi-chevron-down"></i> 
+                    <i class="mdi mdi-chevron-down"></i>
                 </button>
                 <div class="dropdown-menu dropdown-megamenu">
                     <div class="row">
                         <div class="col-sm-8">
-    
+
                             {{-- <div class="row">
                                 <div class="col-md-4">
                                     <h5 class="font-size-14 mt-0">UI Components</h5>
@@ -119,7 +119,7 @@
                                         <li>
                                             <a href="javascript:void(0);">FAQs</a>
                                         </li>
-                            
+
                                     </ul>
                                 </div>
                             </div> --}}
@@ -175,7 +175,7 @@
                 </button>
                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
                     aria-labelledby="page-header-search-dropdown">
-        
+
                     <form class="p-3">
                         <div class="form-group m-0">
                             <div class="input-group">
@@ -195,7 +195,7 @@
                     <img class="" src="assets/images/flags/us.jpg" alt="Header Language" height="16">
                 </button>
                 <div class="dropdown-menu dropdown-menu-right">
-        
+
                     <!-- item-->
                     <a href="javascript:void(0);" class="dropdown-item notify-item">
                         <img src="assets/images/flags/spain.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle">Spanish</span>
@@ -373,21 +373,24 @@
                 </button>
                 <div class="dropdown-menu dropdown-menu-right">
                     <!-- item-->
-                    <a class="dropdown-item" href=""><i class="bx bx-user font-size-16 align-middle mr-1"></i> Profile</a>
+                    {{-- <x-dropdown-link :href="route('profile.edit')">
+                        {{ __('Profile') }}
+                    </x-dropdown-link> --}}
+                    <a class="dropdown-item" href="{{route('profile.edit')}}"><i class="bx bx-user font-size-16 align-middle mr-1"></i> Profile</a>
                     {{-- <a class="dropdown-item" href="dashboard-saas.html#"><i class="bx bx-wallet font-size-16 align-middle mr-1"></i> My Wallet</a> --}}
                     {{-- <a class="dropdown-item d-block" href="dashboard-saas.html#"><span class="badge badge-success float-right">11</span><i class="bx bx-wrench font-size-16 align-middle mr-1"></i> Settings</a> --}}
                     {{-- <a class="dropdown-item" href="dashboard-saas.html#"><i class="bx bx-lock-open font-size-16 align-middle mr-1"></i> Lock screen</a> --}}
                     <div class="dropdown-divider"></div>
                     {{-- <a class="dropdown-item text-danger" href="index.html#"><i class="bx bx-power-off font-size-16 align-middle mr-1 text-danger"></i> Logout</a> --}}
                     <form method="POST" action="{{ route('logout') }}">
-                        @csrf          
+                        @csrf
                             <x-dropdown-link :href="route('logout')"
                                 onclick="event.preventDefault();
                                             this.closest('form').submit();" class="dropdown-item text-danger">
                                             <i class="bx bx-power-off font-size-16 align-middle mr-1 text-danger"></i> Logout
                             </x-dropdown-link>
 
-                    </form>  
+                    </form>
 
                     {{-- <form method="POST" action="{{ route('logout') }}">
                         @csrf
@@ -399,7 +402,7 @@
                         </x-dropdown-link>
                     </form> --}}
 
-                    
+
                 </div>
             </div>
 

@@ -18,9 +18,9 @@ Route::get('/', function () {
     return view('frontend.welcome');
 })->name('home');
 
-Route::get('/mainboard', function () {
-    return view('backend.mainboard');
-})->name('donations');
+// Route::get('/mainboard', function () {
+//     return view('backend.mainboard');
+// })->name('mainboard');
 
 Route::get('/feedbacks', function () {
     return view('backend.feedbacks');
@@ -33,7 +33,7 @@ Route::get('/request', function () {
 
 
 
-Route::get('/dashboard', function () {
+Route::get('/mainboard', function () {
     return view('backend.mainboard');
 })->middleware(['auth', 'verified'])->name('mainboard');
 
