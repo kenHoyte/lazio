@@ -22,11 +22,20 @@ Route::get('/mainboard', function () {
     return view('backend.mainboard');
 })->name('donations');
 
+Route::get('/feedbacks', function () {
+    return view('backend.feedbacks');
+})->name('feedbacks');
+
+Route::get('/request', function () {
+    return view('backend.request');
+})->name('request');
+
+
 
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+    return view('backend.mainboard');
+})->middleware(['auth', 'verified'])->name('mainboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

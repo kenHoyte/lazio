@@ -69,12 +69,12 @@
                                             <li><a href="single-blog.html">single-blog</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                    {{-- <li><a href="#">pages <i class="ti-angle-down"></i></a>
                                         <ul class="submenu">
                                             <li><a href="elements.html">elements</a></li>
                                             <li><a href="Cause.html">Cause</a></li>
                                         </ul>
-                                    </li>
+                                    </li> --}}
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </nav>

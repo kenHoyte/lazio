@@ -21,7 +21,8 @@
     </head>
 
     <body data-sidebar="dark">
-
+        @include('backend.navbar')
+        @include('backend.leftnav')
         @yield('content')
 
         <script src="assets/libs/jquery/jquery.min.js"></script>
